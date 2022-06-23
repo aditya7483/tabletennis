@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+.mynav-font{
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.lobster-font{
+  font-family: 'Lobster', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head-font{
+  font-family: 'Varela Round', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#home{
+  height:35rem;
+  background: url('./components/pics/home.jpg')no-repeat center center/cover;
+  color: black;
+}
+
+.mylogo{
+  /* filter: invert(100%); */
+  height: 10rem;
+    margin: auto;
+    display: block;
+}
+
+.mynav-txt{
+  font-size: 1.18rem;
+}
+
+.mybtn-1{
+  margin: auto;
+  display: block;
+  background-color: white;
+  color: #efa436;
+  font-weight: bold;
+  border: 2px solid #efa436;
+  border-radius: 7px;
+  padding: 4px 12px;
+  margin-right: 25rem;
+}
+
+.mybtn-1:hover{
+  background-color: #efa436;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.myhead-1{
+  letter-spacing: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myhead-2{
+  font-family: 'Righteous', cursive;
+  font-size: 4rem;
 }
