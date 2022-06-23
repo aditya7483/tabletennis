@@ -3,7 +3,7 @@ import Logo from './pics/logo.png'
 
 export default function Home() {
   return (
-    <div className='d-flex justify-content-center' id='home' >
+    <div className='d-flex justify-content-center mb-5' id='home' >
         <div className='align-self-center'>
           <img src={Logo} className="mylogo" alt="..." />
           <h3 className='myhead-1 text-center lobster-font'>TABLE TENNIS-74</h3>
