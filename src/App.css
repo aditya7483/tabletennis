@@ -17,7 +17,7 @@
   background:linear-gradient(
     rgba(0, 0, 0, 0.7), 
     rgba(0, 0, 0, 0.7)
-  ), url('./components/pics/home.jpg')no-repeat center center/cover;
+  ), url('./components/pics/tt-bat.avif')no-repeat center center/cover;
   color: white;
 }
 
@@ -127,6 +127,10 @@
   color: black;
   width: 79%;
   margin: 7rem auto 0px auto;
+}
+
+.slide-img{
+  height: 20rem;
 }
 
 /* Contact */

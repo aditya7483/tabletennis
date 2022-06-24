@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function Login(props) {
+export default function Login() {
 
     const [login, setLogin] = useState(true)
     const [username, setUsername] = useState('');
@@ -42,9 +42,7 @@ export default function Login(props) {
             setErrors(data.err)
         }
         else{
-            handleChange()
-            props.setAuthToken(data.authToken)
-            
+            handleChange()            
         }
     }
     const handleSignup = async (e) => {

@@ -1,4 +1,5 @@
 import React from 'react'
+import Login from './Login'
 import Logo from './pics/logo.png'
 
 export default function Navbar() {
@@ -27,6 +28,12 @@ export default function Navbar() {
                                 <a className="nav-link" href="#contact">Contact Me</a>
                             </li>
                         </ul>
+                        <form className="d-flex" role="search">
+                            <button type="button" className="btn btn-outline-primary border-primary fw-bold border border-3" data-bs-toggle="modal" data-bs-target="#LoginModal">
+                                Login
+                            </button>
+                            <Login/>
+                        </form>
                     </div>
                 </div>
             </nav>
