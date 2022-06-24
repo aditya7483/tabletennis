@@ -102,6 +102,29 @@
   color:#ff3b00;
 }
 
-.social:hover{
+.social:hover,.social2:hover{
   cursor:pointer;
+}
+
+.social2{
+  font-size: 34px;
+  align-self: center;
+  margin: 1px 7rem;
+  color: #ff0099;
+}
+
+.myhead-4{
+  font-size: 1.5rem;
+}
+
+.mycard-1{
+  box-shadow: #000000 2px 3px 0px 0px;
+    height: 13rem;
+    background-color: #fff5c5;
+}
+
+.myline{
+  color: black;
+  width: 79%;
+  margin: 7rem auto 0px auto;
 }

@@ -4,10 +4,10 @@ import Logo from './pics/logo.png'
 export default function Navbar() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg bg-light">
+            <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
                 <div className="container-fluid mynav-font">
                     <a className="navbar-brand" href="/">
-                        <img src={Logo} alt="" style={{ width: '3rem', height: '3rem' }} />
+                        <img src={Logo} alt="" style={{ width: '3rem', height: '3rem',filter:'invert(100%)' }} />
                         <p className='d-inline fw-bold mx-2 lobster-font'>
                             TT-74
                         </p>
