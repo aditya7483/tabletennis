@@ -120,11 +120,23 @@
 .mycard-1{
   box-shadow: #000000 2px 3px 0px 0px;
     height: 13rem;
-    background-color: #fff5c5;
+    background-color: #ebffdc;
 }
 
 .myline{
   color: black;
   width: 79%;
   margin: 7rem auto 0px auto;
+}
+
+/* Contact */
+
+.contact-div{
+  padding: 3rem 5rem;
+  border-radius: 19px;
+  box-shadow: black 0px 4px 8px 0px;
+}
+
+.myhead-5{
+  font-family: 'Lato', sans-serif;
 }

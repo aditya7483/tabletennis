@@ -8,7 +8,7 @@ export default function Navbar() {
                 <div className="container-fluid mynav-font">
                     <a className="navbar-brand" href="/">
                         <img src={Logo} alt="" style={{ width: '3rem', height: '3rem',filter:'invert(100%)' }} />
-                        <p className='d-inline fw-bold mx-2 lobster-font'>
+                        <p className='d-inline fw-bold mx-2 lobster-font h3'>
                             TT-74
                         </p>
                     </a>
@@ -24,7 +24,7 @@ export default function Navbar() {
                                 <a className="nav-link" href="#about">About</a>
                             </li>
                             <li className="nav-item mynav-txt mx-3">
-                                <a className="nav-link" href="/">Contact Me</a>
+                                <a className="nav-link" href="#contact">Contact Me</a>
                             </li>
                         </ul>
                     </div>
