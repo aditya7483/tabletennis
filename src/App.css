@@ -41,7 +41,6 @@
   border: 2px solid #efa436;
   border-radius: 7px;
   padding: 4px 12px;
-  margin-right: 25rem;
 }
 
 .mybtn-1:hover{
@@ -74,7 +73,7 @@
 }
 
 .coach-pic{
-  width: 35rem;
+  max-width:35rem;
 }
 
 #dummy-div-1{
@@ -143,4 +142,79 @@
 
 .myhead-5{
   font-family: 'Lato', sans-serif;
+}
+
+
+@media screen and (max-width:993px) and (min-width:560px) {
+  .myhead-2{
+    font-size: 2.7rem;
+  }
+  .mybtn-1{
+    padding: 1px 9px;
+  }
+  .mylogo{
+    height: 6rem;
+  }
+
+  .myhead-1{
+    font-size: 1.4rem;
+  }
+
+  .myhead-3{
+    font-size: 2.5rem;
+  }
+
+  #about-box{
+    flex-direction: column;
+  }
+
+  .coach-pic{
+    width: 19rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin: 2rem 0px 1rem 0px;
+    align-self: center;
+  }
+
+  .mycard-1{
+    margin:auto;
+  }
+}
+
+@media screen and (max-width:560px){
+  .mylogo {
+    height: 4rem;
+}
+.myhead-1 {
+  font-size: 1rem;
+}
+.myhead-2 {
+  font-size: 2rem;
+}
+.mybtn-1 {
+  padding: 1px 5px;
+  font-size: 15px;
+}
+.myhead-3 {
+  font-size: 2rem;
+}
+
+#about-box{
+  flex-direction: column;
+}
+.coach-pic {
+  width: 15rem;
+  height: 12rem;
+  border-radius: 50%;
+  margin: 2rem 0px 1rem 0px;
+  align-self: center;
+}
+.myhead-4 {
+  font-size: 1.45rem;
+}
+.contact-div {
+  padding: 3rem 1rem;
+  border-radius: 10px;
+  box-shadow: black 0px 4px 8px 0px;
+}
 }
