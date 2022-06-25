@@ -14,7 +14,7 @@ export default function App() {
   const fetchData = async()=>{
     try {
       let authToken = localStorage.getItem('auth-token')
-      let res = await fetch('http://localhost:3001/api/auth/getuser', {
+      let res = await fetch('https://tt-74.herokuapp.com/api/auth/getuser', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -26,7 +26,7 @@ export default function Login() {
     const getAuth = async () => {
         let data;
         try {
-            let res = await fetch('http://localhost:3001/api/auth/login', {
+            let res = await fetch('https://tt-74.herokuapp.com/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -48,7 +48,7 @@ export default function Login() {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        let res = await fetch('http://localhost:3001/api/auth/login', {
+        let res = await fetch('https://tt-74.herokuapp.com/api/auth/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -73,7 +73,7 @@ export default function Login() {
     }
     const handleSignup = async (e) => {
         e.preventDefault();
-        let res = await fetch('http://localhost:3001/api/auth/signup', {
+        let res = await fetch('https://tt-74.herokuapp.com/api/auth/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

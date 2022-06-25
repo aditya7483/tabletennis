@@ -27,7 +27,7 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            let res = await fetch('http://localhost:3001/api/notes/createNote', {
+            let res = await fetch('https://tt-74.herokuapp.com/api/notes/createNote', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
