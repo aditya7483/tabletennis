@@ -2,7 +2,13 @@ import React from 'react'
 import Login from './Login'
 import Logo from './pics/logo.png'
 
-export default function Navbar() {
+export default function Navbar(props) {
+
+    const handleLogout = ()=>{
+        localStorage.removeItem('auth-token');
+        window.location.reload();
+    }
+
     return (
         <div>
             <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
@@ -29,11 +35,13 @@ export default function Navbar() {
                             </li>
                         </ul>
                         <form className="d-flex" role="search">
-                            <button type="button" className="btn btn-outline-primary border-primary fw-bold border border-3" data-bs-toggle="modal" data-bs-target="#LoginModal">
+                            {!props.logged?<button type="button" className="btn btn-outline-primary border-primary fw-bold border border-3" data-bs-toggle="modal" data-bs-target="#LoginModal">
                                 Login
-                            </button>
-                            <Login/>
+                            </button>:
+                            <button className='btn btn-outline-secondary' onClick={handleLogout}>Logout</button>
+                            }
                         </form>
+                            <Login/>
                     </div>
                 </div>
             </nav>

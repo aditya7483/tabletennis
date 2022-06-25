@@ -23,6 +23,29 @@ export default function Login() {
         setPassword('');
     }
 
+    const getAuth = async () => {
+        let data;
+        try {
+            let res = await fetch('http://localhost:3001/api/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username: username,
+                    password: password
+                })
+            })
+            data = await res.json();
+            setLogin(true)
+            localStorage.setItem('auth-token', data.authToken)
+            window.location.reload()
+        } catch (err) {
+            handleChange()
+            setErrors(data.err)
+        }
+    }
+
     const handleLogin = async (e) => {
         e.preventDefault();
         let res = await fetch('http://localhost:3001/api/auth/login', {
@@ -36,13 +59,16 @@ export default function Login() {
             })
         })
         let data = await res.json();
-        
+
         if (data.err) {
             handleChange()
             setErrors(data.err)
         }
-        else{
-            handleChange()            
+        else {
+            handleChange()
+            localStorage.setItem('auth-token', data.authToken)
+            setLogin(true)
+            window.location.reload()
         }
     }
     const handleSignup = async (e) => {
@@ -59,13 +85,13 @@ export default function Login() {
             })
         })
         let data = await res.json();
-        
+
         if (data.err) {
             handleChange()
             setErrors(data.err)
         }
-        else{
-            setLogin(true)
+        else {
+            getAuth()
         }
     }
 
@@ -127,10 +153,10 @@ export default function Login() {
                                                 }}>Signup</button>
                                             </> :
                                             <>
-                                                    Already have an account? <button className='border-0 text-primary' onClick={() => {
-                                                        setLogin(true);
-                                                        handleChange();
-                                                    }}>Login</button>
+                                                Already have an account? <button className='border-0 text-primary' onClick={() => {
+                                                    setLogin(true);
+                                                    handleChange();
+                                                }}>Login</button>
                                             </>
                                     }
                                 </p>
